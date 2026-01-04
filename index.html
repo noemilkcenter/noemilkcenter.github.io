@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野江ミルクセンター | 新鮮な牛乳をお届け</title>
+    <link rel="icon" type="image/png" href="images/noe-milk-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="index.html" aria-label="トップへ">
+        <img src="images/noe-milk-longlogo.png" alt="野江ミルクセンター ロゴ" class="navbar-logo">
+      </a>
+      <button class="navbar-toggle" aria-label="メニュー" aria-controls="navbar-menu" aria-expanded="false">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <nav class="navbar-menu" id="navbar-menu">
+        <a href="contact.html" class="contact-btn">お問い合わせ</a>
+        <a href="takuhai.html" class="takuhai-btn">宅配について</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" data-aos="fade-up">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/top-banner.png" alt="牛乳のバナー1"></div>
+            <div class="swiper-slide"><img src="images/top-banner4.jpg" alt="牛乳のバナー2"></div>
+            <div class="swiper-slide"><img src="images/top-banner2.jpg" alt="牛乳のバナー3"></div>
+            <div class="swiper-slide"><img src="images/top-banner3.jpg" alt="牛乳のバナー4"></div>
+            <div class="swiper-slide"><img src="images/top-banner5.jpg" alt="牛乳のバナー5"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="about" data-aos="fade-up">
+        <h2>私たちについて</h2>
+        <p>野江ミルクセンターは大阪市城東区野江で牛乳屋を営んでおります。</p>
+        <p>地域の皆様に寄り添い、温かみのあるスタイルで新鮮な牛乳をお届けしています。</p>
+        <p>配達範囲は、守口市・大阪市城東区・都島区・旭区・鶴見区・東成区・北区・中央区です。まずはお気軽にお問い合わせください。</p>
+      </section>
+
+      <section class="products" data-aos="fade-up">
+        <h2>取り扱い商品</h2>
+        <p class="products-note">カードをタップすると詳細が開きます。</p>
+
+        <div class="product-grid">
+          <div class="product-card" onclick="openModal('modal-shirobara')">
+            <img src="images/shirobara-milk.png" alt="特選白バラ牛乳">
+            <h3>特選白バラ牛乳</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-daisen')">
+            <img src="images/daisen-milk.png" alt="厳選大山牧場">
+            <h3>厳選大山牧場</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-cofe')">
+            <img src="images/shirobara-cofe.png" alt="白バラこだわりカフェ・オ・レ">
+            <h3>白バラこだわりカフェ・オ・レ</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-teishibou')">
+            <img src="images/shirobara-teishibou.png" alt="白バラおいしい低脂肪牛乳">
+            <h3>白バラおいしい低脂肪牛乳</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-yogurt')">
+            <img src="images/shirobara-yogurt.png" alt="白バラのむヨーグルト">
+            <h3>白バラのむヨーグルト</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-karutetsu')">
+            <img src="images/shirobara-karutethsu.png" alt="白バラカルテツミルク">
+            <h3>白バラカルテツミルク</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-fruts')">
+            <img src="images/shirobara-fruts.png" alt="白バラフルーツオ・レ">
+            <h3>白バラフルーツオ・レ</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-GABA')">
+            <img src="images/daisenyogul.png" alt="大山牧場ヨーグルト">
+            <h3>大山牧場ヨーグルト</h3>
+          </div>
+          <div class="product-card" onclick="openModal('modal-aoziru')">
+            <img src="images/shirobara-aoziru.webp" alt="白バラ菜食健美">
+            <h3>白バラ菜食健美</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- 商品モーダル -->
+      <div id="modal-shirobara" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-shirobara')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-milk.png" alt="白バラ牛乳">
+          <div class="modal-text">
+            <h3>特選白バラ牛乳</h3>
+            <p>180ml / 500ml / 900ml<br>(税別)170円 / 380円 / 530円</p>
+            <p>鳥取県内産生乳100％使用。特選生乳のみを特別に集乳し製品化しました。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-daisen" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-daisen')" aria-label="閉じる">×</button>
+          <img src="images/daisen-milk.png" alt="厳選大山牧場">
+          <div class="modal-text">
+            <h3>厳選大山牧場</h3>
+            <p>180ml / 500ml / 900ml<br>(税別)190円 / 400円 / 550円</p>
+            <p>特に優れた生乳の中でも厳しい基準をクリアした生乳のみを使用しています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-cofe" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-cofe')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-cofe.png" alt="白バラこだわりカフェ・オ・レ">
+          <div class="modal-text">
+            <h3>白バラこだわりカフェ・オ・レ</h3>
+            <p>180ml / 500ml / 900ml<br>(税別)170円 / 380円 / 530円</p>
+            <p>生乳64％使用。キリマンジャロAA豆を使った本格派カフェオレです。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-teishibou" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-teishibou')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-teishibou.png" alt="白バラおいしい低脂肪牛乳">
+          <div class="modal-text">
+            <h3>白バラおいしい低脂肪牛乳</h3>
+            <p>180ml / 500ml<br>(税別)170円 / 380円</p>
+            <p>生乳100％。乳脂肪分60％カット（普通牛乳比）。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-yogurt" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-yogurt')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-yogurt.png" alt="白バラのむヨーグルト">
+          <div class="modal-text">
+            <h3>白バラのむヨーグルト</h3>
+            <p>180ml / 750ml<br>(税別)170円 / 530円</p>
+            <p>生乳78％使用。飲みごたえのあるヨーグルトです。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-karutetsu" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-karutetsu')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-karutethsu.png" alt="白バラカルテツミルク">
+          <div class="modal-text">
+            <h3>白バラカルテツミルク</h3>
+            <p>180ml<br>(税別)170円</p>
+            <p>半日分のカルシウム・鉄、ビタミンD配合。毎日の栄養補給に。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-fruts" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-fruts')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-fruts.png" alt="白バラフルーツオ・レ">
+          <div class="modal-text">
+            <h3>白バラフルーツオ・レ</h3>
+            <p>180ml<br>(税別)170円</p>
+            <p>りんご・バナナ・ももの果汁をミックス。甘酸っぱい味わい。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-GABA" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-GABA')" aria-label="閉じる">×</button>
+          <img src="images/daisenyogul.png" alt="大山牧場ヨーグルト">
+          <div class="modal-text">
+            <h3>大山牧場ヨーグルト</h3>
+            <p>100g<br>(税別)170円</p>
+            <p>シンプルな配合。生きて腸まで届くビフィズス菌BB-12使用。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-aoziru" class="modal" style="display:none;">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal('modal-aoziru')" aria-label="閉じる">×</button>
+          <img src="images/shirobara-aoziru.webp" alt="白バラ菜食健美">
+          <div class="modal-text">
+            <h3>白バラ菜食健美</h3>
+            <p>90ml<br>(税別)200円</p>
+            <p>高知県産10種の野菜。青汁特有の苦みを抑えたやさしい飲み口。</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="contact" data-aos="fade-up">
+        <h2>お問い合わせ</h2>
+        <p><a href="tel:080-2511-0197" class="contact-btn">電話でお問い合わせ</a></p>
+        <p><a href="contact.html" class="contact-btn">メールでお問い合わせ</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 野江ミルクセンター | 配達専門</p>
+    </footer>
+
+    <script>
+      // ハンバーガーメニュー
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+        toggle.addEventListener('click', () => {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', (!expanded).toString());
+          menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+      });
+
+      function openModal(id) {
+        // すべてのモーダルを非表示にする
+        document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+        // 指定のモーダルのみ表示
+        document.getElementById(id).style.display = 'block';
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+      });
+    </script>
+  </body>
+
+</html>

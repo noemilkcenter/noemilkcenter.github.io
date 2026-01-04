@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宅配について | 野江ミルクセンター</title>
+    <link rel="icon" type="image/png" href="images/noe-milk-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="index.html" aria-label="トップへ">
+        <img src="images/noe-milk-longlogo.png" alt="野江ミルクセンター ロゴ" class="navbar-logo">
+      </a>
+      <button class="navbar-toggle" aria-label="メニュー" aria-controls="navbar-menu" aria-expanded="false">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <nav class="navbar-menu" id="navbar-menu">
+        <a href="contact.html" class="contact-btn">お問い合わせ</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero-static" aria-hidden="true">
+        <img src="images/top-banner3.jpg" alt="宅配イメージ" class="hero-img">
+      </section>
+
+      <section data-aos="fade-up">
+        <h2>宅配の流れ</h2>
+        <img src="images/配達の流れ.png" alt="宅配の流れ" class="full-img">
+      </section>
+
+      <section data-aos="fade-up">
+        <h2>お届け時間</h2>
+        <img src="images/朝昼夜配達.png" alt="朝・昼・夕のお届け" class="full-img">
+        <div class="takuhaibox">
+        </div>
+        <h3 class="center">お客様の生活に合わせてお届けします。</h3>
+      </section>
+
+      <section data-aos="fade-up">
+        <h2>宅配のお申し込み</h2>
+        <form class="contact-form" action="https://formspree.io/f/xpwrbvdo" method="POST">
+          <input type="hidden" name="_subject" value="【野江ミルクセンター】宅配申し込み">
+          <label>お名前<input type="text" name="お名前" required></label>
+          <label>郵便番号<input type="text" name="郵便番号" required></label>
+          <label>住所<input type="text" name="住所" required></label>
+          <label>電話番号<input type="tel" name="電話番号" required></label>
+          <label>メールアドレス<input type="email" name="メールアドレス" required></label>
+          <label>ご希望・ご質問<textarea name="宅配希望・質問" rows="5" required></textarea></label>
+          <label class="checkbox"><input type="checkbox" name="同意" required> <a href="privacy.html"
+              target="_blank">個人情報保護方針</a>に同意する</label>
+          <button type="submit" class="btn-primary">送信する</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 野江ミルクセンター | 配達専門</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+        toggle.addEventListener('click', () => menu.classList.toggle('open'));
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+      });
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 野江ミルクセンター</title>
+    <link rel="icon" type="image/png" href="images/noe-milk-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="index.html" aria-label="トップへ">
+        <img src="images/noe-milk-longlogo.png" alt="野江ミルクセンター ロゴ" class="navbar-logo">
+      </a>
+      <button class="navbar-toggle" aria-label="メニュー" aria-controls="navbar-menu" aria-expanded="false">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <nav class="navbar-menu" id="navbar-menu">
+        <a href="takuhai.html" class="takuhai-btn">宅配について</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>お問い合わせ</h1>
+      <form class="contact-form" action="https://formspree.io/f/xpwrbvdo" method="POST">
+        <input type="hidden" name="_subject" value="【野江ミルクセンター】お問い合わせ">
+        <label>お名前<input type="text" name="お名前" required></label>
+        <label>フリガナ<input type="text" name="フリガナ" required></label>
+        <label>郵便番号<input type="text" name="郵便番号" required></label>
+        <label>住所<input type="text" name="住所" required></label>
+        <label>電話番号<input type="tel" name="電話番号" required></label>
+        <label>メールアドレス<input type="email" name="メールアドレス" required></label>
+        <label>お問い合わせ内容<textarea name="お問い合わせ内容" rows="5" required></textarea></label>
+        <label class="checkbox"><input type="checkbox" name="同意" required> <a href="privacy.html"
+            target="_blank">個人情報保護方針</a>に同意する</label>
+        <button type="submit" class="btn-primary">送信する</button>
+      </form>
+      <p class="center"><a href="index.html">トップページへ戻る</a></p>
+    </main>
+
+    <footer>
+      <p>© 2025 野江ミルクセンター | 配達専門</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+        toggle.addEventListener('click', () => menu.classList.toggle('open'));
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+      });
+    </script>
+  </body>
+
+</html>
