@@ -469,10 +469,46 @@ footer {
 
   .product-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .product-card {
+    max-width: 100%;
   }
 
   .milk-img {
     width: 96px;
     height: 96px;
   }
+}
+
+/* スマホ時に.product-gridと.product-cardのmax-widthを100%にして体裁崩れを防止 */
+@media (max-width: 600px) {
+  .product-grid {
+    max-width: 100%;
+  }
+  .product-card {
+    max-width: 100%;
+  }
+}
+
+/* 蒜山ジャージー牛乳画像を大きく */
+.hirusen-img {
+  height: 150px !important;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 6px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* 遠藤青汁画像も他カードと同じサイズに統一 */
+.aojiru-img {
+  height: 120px !important;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 6px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
 }
