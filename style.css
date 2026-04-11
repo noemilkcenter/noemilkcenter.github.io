@@ -225,27 +225,49 @@ section {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
+  width: 100%;
+  max-width: 440px; /* 2列×カード幅+gapで調整 */
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .product-card {
+  min-height: 220px;
+  width: 100%;
+  max-width: 210px; /* 2列時に均一な幅 */
   background: #fff;
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .06);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* ←ここが超重要 */
 .product-card img {
-  width: 90px;
-  margin: 0 auto 6px;
+  width: 100%;
+  height: 120px;
+  /* ←高さ固定 */
+  object-fit: contain;
+  /* ←全部見せる */
+  margin-bottom: 6px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
 }
 
 .product-card h3 {
   font-size: 0.95rem;
   color: #e60012;
   margin: 0;
+  height: 4.2em; /* 1.4em × 3行分 */
+  line-height: 1.4em;
+  overflow: hidden;
 }
 
 /* --- モーダル --- */
@@ -266,16 +288,20 @@ section {
   max-width: 360px;
   margin: 40px auto;
   padding: 14px;
-  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  justify-content: center;
 }
 
+/* ←ここ修正 */
 .modal-content img {
-  width: 160px;
+  width: 100%;
+  max-width: 220px;
+  height: 180px;
+  /* ←高さ固定 */
+  object-fit: contain;
+  /* ←切らない */
 }
 
 .modal-text h3 {
