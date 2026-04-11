@@ -234,8 +234,8 @@ section {
 }
 
 .product-card {
-  min-height: 230px;
-  height: 250px;
+  min-height: 200px;
+  height: 240px;
   width: 100%;
   background: #fff;
   border: 1px solid #eee;
