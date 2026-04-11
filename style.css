@@ -227,6 +227,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   width: 100%;
+  max-width: 440px;
   margin: 0 auto;
   justify-items: center;
 }
@@ -266,6 +267,26 @@ section {
   height: 4.2em; /* 1.4em × 3行分 */
   line-height: 1.4em;
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .product-card {
+    width: 100%;
+  }
 }
 
 /* --- モーダル --- */
