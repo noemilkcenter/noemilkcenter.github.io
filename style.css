@@ -234,7 +234,7 @@ section {
 }
 
 .product-card {
-  min-height: 200px;
+  min-height: 230px;
   height: 240px;
   width: 100%;
   background: #fff;
@@ -261,7 +261,7 @@ section {
 }
 
 .product-card img.hirusen-img {
-  max-height: 150px;
+  max-height: 120px;
   height: auto;
   width: 100%;
   object-fit: contain;
