@@ -275,7 +275,8 @@ section {
   margin: 0 0 1em 0;
   min-height: 5.6em;
   line-height: 1.4em;
-  word-break: break-word;
+  word-break: break-all; /* 追加: 強制折り返し */
+  overflow-wrap: break-word; /* 追加: 長い単語も折り返し */
 }
 
 /* --- モーダル --- */
