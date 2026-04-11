@@ -234,8 +234,8 @@ section {
 }
 
 .product-card {
-  min-height: 180px;
-  height: 200px;
+  min-height: 200px;
+  height: 240px;
   width: 100%;
   background: #fff;
   border: 1px solid #eee;
@@ -246,10 +246,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.product-card.tall-card {
-  height: 260px;
 }
 
 /* ←ここが超重要 */
