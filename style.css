@@ -514,6 +514,8 @@ footer {
 
   .product-card {
     max-width: 100%;
+    height: 210px;
+    min-height: 190px;
   }
 }
 
