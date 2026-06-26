@@ -1,461 +1,526 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>野江ミルクセンター | 新鮮な牛乳をお届け</title>
-    <link rel="icon" type="image/png" href="images/noe-milk-logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>野江ミルクセンター | 大阪市城東区周辺の牛乳宅配</title>
+    <meta name="description" content="大阪市城東区・都島区・旭区・鶴見区ほかへ、新鮮な牛乳・乳製品を宅配する野江ミルクセンターです。商品サイズにより週1本からお気軽にご相談ください。">
+    <meta property="og:title" content="野江ミルクセンター | 牛乳・乳製品の宅配">
+    <meta property="og:description" content="大阪市城東区周辺へ、新鮮な牛乳・乳製品をお届けします。">
+    <meta property="og:image" content="https://noemilkcenter.github.io/images/top-banner.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
   </head>
 
   <body>
-    <header class="navbar">
-      <a href="index.html" aria-label="トップへ">
-        <img src="images/noe-milk-longlogo.png" alt="野江ミルクセンター ロゴ" class="navbar-logo">
-      </a>
-      <button class="navbar-toggle" aria-label="メニュー" aria-controls="navbar-menu" aria-expanded="false">
-        <span class="navbar-toggle-icon"></span>
-      </button>
-      <nav class="navbar-menu" id="navbar-menu">
-        <a href="contact.html" class="contact-btn">お問い合わせ</a>
-        <a href="takuhai.html" class="takuhai-btn">宅配について</a>
+    <div class="app-shell">
+      <header class="site-header" aria-label="サイトヘッダー">
+        <a class="brand" href="#top" aria-label="トップへ">
+          <img src="https://noemilkcenter.github.io/images/noe-milk-longlogo.png" alt="野江ミルクセンター">
+        </a>
+        <a class="header-call" href="tel:080-2511-0197">電話</a>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <img class="hero-image" src="https://noemilkcenter.github.io/images/top-banner3.jpg" alt="牛乳と宅配ボックス">
+          <div class="hero-copy">
+            <p class="eyebrow">大阪市城東区・周辺へ宅配</p>
+            <h1 id="hero-title">毎日の牛乳を、<br>玄関先まで。</h1>
+            <p class="lead">白バラ牛乳・蒜山ジャージー・森永・明治など、暮らしに合わせてお届けします。</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#apply">宅配を申し込む</a>
+              <a class="button secondary" href="tel:080-2511-0197">電話で相談</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="quick-info" aria-label="宅配の概要">
+          <div>
+            <span>配達エリア</span>
+            <strong>城東区・都島区ほか</strong>
+          </div>
+          <div>
+            <span>目安</span>
+            <strong>サイズにより週1本から</strong>
+          </div>
+          <div>
+            <span>方法</span>
+            <strong>電話・フォーム</strong>
+          </div>
+        </section>
+
+        <section class="section intro" aria-labelledby="about-title">
+          <h2 id="about-title">野江の牛乳屋です</h2>
+          <p>地域の皆さまに寄り添いながら、新鮮な牛乳・乳製品をお届けしています。配達範囲は、守口市・大阪市城東区・都島区・旭区・鶴見区・東成区・北区・中央区です。</p>
+        </section>
+
+        <section class="section" aria-labelledby="products-title">
+          <div class="section-title-row">
+            <h2 id="products-title">取り扱い商品</h2>
+            <a href="#apply">相談する</a>
+          </div>
+          <p class="tap-hint">カードをタップすると価格と詳しい内容が見られます。</p>
+          <div class="category-pills" aria-label="商品カテゴリ">
+            <a href="#daisen">大山乳業</a>
+            <a href="#hiruzen">蒜山ジャージー</a>
+            <a href="#morinaga">森永乳業</a>
+            <a href="#meiji">明治</a>
+            <a href="#endo">遠藤青汁</a>
+          </div>
+
+          <div class="product-list">
+            <h3 class="product-group-title" id="daisen">大山乳業</h3>
+            <article class="product-card" id="milk">
+              <img src="https://noemilkcenter.github.io/images/shirobara-milk.png" alt="特選白バラ牛乳">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>特選白バラ牛乳</h3>
+                <p>宅配専用の定番商品。毎日の習慣に。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/daisen-milk.png" alt="厳選大山牧場">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>厳選大山牧場</h3>
+                <p>しっかりした味わいの牛乳をお探しの方へ。</p>
+              </div>
+            </article>
+            <article class="product-card" id="coffee">
+              <img src="https://noemilkcenter.github.io/images/shirobara-cofe.png" alt="白バラこだわりカフェ・オ・レ">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>こだわりカフェ・オ・レ</h3>
+                <p>朝食や休憩時間に飲みやすい人気商品。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/shirobara-teishibou.png" alt="白バラおいしい低脂肪牛乳">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>おいしい低脂肪牛乳</h3>
+                <p>脂肪分を控えたい方にも続けやすい牛乳。</p>
+              </div>
+            </article>
+            <article class="product-card" id="yogurt">
+              <img src="https://noemilkcenter.github.io/images/shirobara-yogurt.png" alt="白バラのむヨーグルト">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>白バラのむヨーグルト</h3>
+                <p>毎日続けやすい、すっきりした飲むヨーグルト。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/shirobara-karutethsu.png" alt="白バラカルテツミルク">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>カルテツミルク</h3>
+                <p>カルシウムと鉄分を意識したい方へ。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/shirobara-fruts.png" alt="白バラフルーツオ・レ">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>フルーツオ・レ</h3>
+                <p>お子さまにも飲みやすいまろやかな味わい。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/daisenyogul.png" alt="大山牧場ヨーグルト">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>大山牧場ヨーグルト</h3>
+                <p>朝食や食後に取り入れやすいヨーグルト。</p>
+              </div>
+            </article>
+            <article class="product-card" id="health">
+              <img src="https://noemilkcenter.github.io/images/shirobara-aoziru.webp" alt="白バラ菜食健美">
+              <div>
+                <p class="maker">大山乳業</p>
+                <h3>白バラ菜食健美</h3>
+                <p>野菜不足が気になる方の毎日習慣に。</p>
+              </div>
+            </article>
+
+            <h3 class="product-group-title" id="hiruzen">蒜山ジャージー牛乳</h3>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/hirusen_4.2.png" alt="蒜山ジャージー4.2">
+              <div>
+                <p class="maker">蒜山ジャージー牛乳</p>
+                <h3>蒜山ジャージー4.2</h3>
+                <p>濃厚な味わいを楽しみたい方におすすめ。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/hirusen_A2.png" alt="蒜山高原のすっきり美味しいジャージー牛乳A2">
+              <div>
+                <p class="maker">蒜山ジャージー牛乳</p>
+                <h3>ジャージー牛乳A2</h3>
+                <p>すっきり美味しい味わいのA2タイプ。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/hirusen_premium.png" alt="蒜山ジャージー牛乳プレミアム">
+              <div>
+                <p class="maker">蒜山ジャージー牛乳</p>
+                <h3>ジャージープレミアム</h3>
+                <p>特別感のある濃厚なジャージー牛乳。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/hirusen_cafeore.png" alt="蒜山酪農カフェ・オ・レ">
+              <div>
+                <p class="maker">蒜山ジャージー牛乳</p>
+                <h3>蒜山酪農カフェ・オ・レ</h3>
+                <p>ミルク感のあるカフェオレが好きな方へ。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/hirusen_yoguruto.png" alt="蒜山ジャージー飲むヨーグルト">
+              <div>
+                <p class="maker">蒜山ジャージー牛乳</p>
+                <h3>飲むヨーグルト</h3>
+                <p>濃厚で飲みやすいジャージーヨーグルト。</p>
+              </div>
+            </article>
+
+            <h3 class="product-group-title" id="morinaga">森永乳業</h3>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/karudasu_milk.jpg" alt="森永カルダスミルク">
+              <div>
+                <p class="maker">森永乳業</p>
+                <h3>カルダスミルク</h3>
+                <p>宅配専用の健康習慣向けミルク。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/karada_nomu_yoguruto.jpg" alt="カラダ強くする飲むヨーグルト">
+              <div>
+                <p class="maker">森永乳業</p>
+                <h3>カラダ強くする飲むヨーグルト</h3>
+                <p>手軽に続けやすい飲むタイプ。</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/karada_yoguruto.jpg" alt="カラダ強くするヨーグルト">
+              <div>
+                <p class="maker">森永乳業</p>
+                <h3>カラダ強くするヨーグルト</h3>
+                <p>毎日の食卓に置きやすいヨーグルト。</p>
+              </div>
+            </article>
+
+            <h3 class="product-group-title" id="meiji">明治</h3>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/R-1.jpg" alt="R-1ドリンクタイプ">
+              <div>
+                <p class="maker">明治</p>
+                <h3>R-1ドリンクタイプ</h3>
+                <p>体調管理を意識したい方に人気の商品。</p>
+              </div>
+            </article>
+
+            <h3 class="product-group-title" id="endo">遠藤青汁</h3>
+            <article class="product-card">
+              <img src="https://noemilkcenter.github.io/images/endo_aojiru.png" alt="青汁生ジュース">
+              <div>
+                <p class="maker">遠藤青汁</p>
+                <h3>青汁生ジュース</h3>
+                <p>健康習慣に取り入れたい方へ。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section social-section" aria-labelledby="instagram-title">
+          <div>
+            <p class="eyebrow">Instagram</p>
+            <h2 id="instagram-title">配達や商品の様子を発信しています</h2>
+            <p>最新のお知らせや取り扱い商品の紹介は、Instagramでもご覧いただけます。</p>
+          </div>
+          <a class="button secondary instagram-link" href="https://www.instagram.com/noe.milkcenter/" target="_blank"
+            rel="noopener">@noe.milkcenter</a>
+        </section>
+
+        <section class="section faq-section" aria-labelledby="faq-title">
+          <div class="section-title-row">
+            <h2 id="faq-title">よくある質問</h2>
+            <a href="#apply">相談する</a>
+          </div>
+
+          <div class="faq-list">
+            <h3 class="faq-group-title">お申し込みについて</h3>
+            <details class="faq-item">
+              <summary>1本から注文できますか？</summary>
+              <p>はい。商品によっては1本からご注文いただけます。180mlは週2本、500mlは週1本から配達可能です。</p>
+            </details>
+            <details class="faq-item">
+              <summary>電話でも申し込めますか？</summary>
+              <p>はい。お電話または、お問い合わせフォームからお申し込みいただけます。</p>
+            </details>
+
+            <h3 class="faq-group-title">配達について</h3>
+            <details class="faq-item">
+              <summary>配達エリアはどこですか？</summary>
+              <p>配達エリアは、守口市・大阪市城東区・都島区・旭区・鶴見区・東成区・北区・中央区です。</p>
+            </details>
+            <details class="faq-item">
+              <summary>配達の曜日は選べますか？</summary>
+              <p>はい。お気軽にご相談ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>時間指定はできますか？</summary>
+              <p>はい。ご希望のお時間にお届けできるよう努めております。配達ルートによってはご希望に添えない場合もございますので、まずはお気軽にご相談ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>留守でも配達してもらえますか？</summary>
+              <p>はい。専用の保冷箱をご用意しておりますので、設置していただければ、ご不在時でも安心してお受け取りいただけます。</p>
+            </details>
+            <details class="faq-item">
+              <summary>雨の日も配達してもらえますか？</summary>
+              <p>はい。雨の日でも通常どおり配達いたします。天候や交通状況により多少前後する場合がありますが、できる限り予定どおりお届けいたします。</p>
+            </details>
+            <details class="faq-item">
+              <summary>長期旅行中はお休みできますか？</summary>
+              <p>はい。旅行や入院などでご不在の際は、一時的に配達をお休みできます。事前にご連絡いただければ対応いたします。</p>
+            </details>
+            <details class="faq-item">
+              <summary>配達日の変更はできますか？</summary>
+              <p>はい。できる限りご希望に添えるよう対応いたします。まずはお気軽にご相談ください。</p>
+            </details>
+
+            <h3 class="faq-group-title">商品について</h3>
+            <details class="faq-item">
+              <summary>どんな商品を取り扱っていますか？</summary>
+              <p>牛乳・ヨーグルト・乳酸菌飲料・健康飲料など、さまざまな商品を取り扱っております。詳しくは商品一覧をご覧ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>賞味期限はどれくらいですか？</summary>
+              <p>商品によって異なりますが、賞味期限内に安心してお召し上がりいただける商品をお届けしております。</p>
+            </details>
+            <details class="faq-item">
+              <summary>おすすめの商品を教えてもらえますか？</summary>
+              <p>お客様のご希望やライフスタイルに合わせて、おすすめの商品をご案内いたします。お気軽にご相談ください。</p>
+            </details>
+
+            <h3 class="faq-group-title">お支払いについて</h3>
+            <details class="faq-item">
+              <summary>支払い方法は何がありますか？</summary>
+              <p>口座振替・集金などをご利用いただけます。詳しくはお問い合わせください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>支払いは毎月ですか？</summary>
+              <p>はい。お支払いは毎月まとめてお願いいたします。お支払い方法によって時期が異なる場合があります。</p>
+            </details>
+            <details class="faq-item">
+              <summary>領収書は発行できますか？</summary>
+              <p>はい。ご希望のお客様には領収書を発行いたします。お気軽にお申し付けください。</p>
+            </details>
+
+            <h3 class="faq-group-title">変更・解約について</h3>
+            <details class="faq-item">
+              <summary>商品の変更はできますか？</summary>
+              <p>はい。商品の種類や本数の変更が可能です。お気軽にご相談ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>本数を増やしたいのですが。</summary>
+              <p>はい。追加も承っております。ご希望の本数をお気軽にお知らせください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>一時的にお休みできますか？</summary>
+              <p>はい。旅行や入院などの際は、一時的に配達をお休みできます。事前にご連絡をお願いいたします。</p>
+            </details>
+            <details class="faq-item">
+              <summary>解約したい場合はどうすればいいですか？</summary>
+              <p>商品の手配の都合上、解約をご希望の場合は、解約希望日の2週間前までにお電話またはお問い合わせフォームよりご連絡ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>違約金はありますか？</summary>
+              <p>違約金はございません。解約をご希望の場合は、解約希望日の2週間前までにお気軽にご相談ください。</p>
+            </details>
+
+            <h3 class="faq-group-title">その他</h3>
+            <details class="faq-item">
+              <summary>問い合わせの返事はどれくらいで来ますか？</summary>
+              <p>内容を確認のうえ、営業時間内に順次ご返信いたします。お急ぎの場合はお電話でご連絡ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary>定休日はありますか？</summary>
+              <p>定休日はございません。年末年始などの営業については、時期が近づきましたらお知らせいたします。</p>
+            </details>
+            <details class="faq-item">
+              <summary>法人でも利用できますか？</summary>
+              <p>はい。法人様や事業所様からのご注文も承っております。お気軽にお問い合わせください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="section apply-card" id="apply" aria-labelledby="apply-title">
+          <p class="eyebrow">申し込み・ご相談</p>
+          <h2 id="apply-title">配達できるか、まずはご相談ください</h2>
+          <p>住所・希望商品・本数がまだ決まっていなくても大丈夫です。お気軽にお問い合わせください。</p>
+          <div class="apply-actions">
+            <a class="button primary" href="tel:080-2511-0197">電話で問い合わせる</a>
+            <a class="button secondary" href="contact.html">フォームを開く</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 野江ミルクセンター</p>
+        <a href="privacy.html">個人情報保護方針</a>
+      </footer>
+
+      <div class="product-modal" id="product-modal" aria-hidden="true">
+        <button class="modal-backdrop" type="button" data-close-modal aria-label="閉じる"></button>
+        <section class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <button class="modal-close" type="button" data-close-modal aria-label="閉じる">×</button>
+          <img class="modal-image" id="modal-image" src="" alt="">
+          <p class="modal-maker" id="modal-maker"></p>
+          <h2 id="modal-title"></h2>
+          <p class="modal-price" id="modal-price"></p>
+          <p class="modal-desc" id="modal-desc"></p>
+        </section>
+      </div>
+
+      <nav class="bottom-cta" aria-label="固定お問い合わせ">
+        <a href="tel:080-2511-0197">電話する</a>
+        <a href="#apply">宅配相談</a>
       </nav>
-    </header>
-
-    <main>
-      <section class="hero" data-aos="fade-up">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/top-banner.png" alt="牛乳のバナー1"></div>
-            <div class="swiper-slide"><img src="images/top-banner4.jpg" alt="牛乳のバナー2"></div>
-            <div class="swiper-slide"><img src="images/top-banner2.jpg" alt="牛乳のバナー3"></div>
-            <div class="swiper-slide"><img src="images/top-banner3.jpg" alt="牛乳のバナー4"></div>
-            <div class="swiper-slide"><img src="images/top-banner5.jpg" alt="牛乳のバナー5"></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <section class="about" data-aos="fade-up">
-        <h2>私たちについて</h2>
-        <p>野江ミルクセンターは大阪市城東区野江で牛乳屋を営んでおります。</p>
-        <p>地域の皆様に寄り添い、温かみのあるスタイルで新鮮な牛乳をお届けしています。</p>
-        <p>配達範囲は、守口市・大阪市城東区・都島区・旭区・鶴見区・東成区・北区・中央区です。まずはお気軽にお問い合わせください。</p>
-      </section>
-
-      <section class="products" data-aos="fade-up">
-        <h2>取り扱い商品</h2>
-        <p class="products-note">カードをタップすると詳細が開きます。</p>
-        <br>
-        <!-- 大山乳業 -->
-        <h2>大山乳業</h2>
-        <div class="product-grid">
-          <div class="product-card" onclick="openModal('modal-shirobara')">
-            <img src="images/shirobara-milk.png" alt="特選白バラ牛乳">
-            <h3>特選白バラ牛乳<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-daisen')">
-            <img src="images/daisen-milk.png" alt="厳選大山牧場">
-            <h3>厳選大山牧場<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-cofe')">
-            <img src="images/shirobara-cofe.png" alt="白バラこだわりカフェ・オ・レ">
-            <h3>白バラこだわり<br>カフェ・オ・レ<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-teishibou')">
-            <img src="images/shirobara-teishibou.png" alt="白バラおいしい低脂肪牛乳">
-            <h3>白バラおいしい<br>低脂肪牛乳<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-yogurt')">
-            <img src="images/shirobara-yogurt.png" alt="白バラのむヨーグルト">
-            <h3>白バラのむヨーグルト<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-karutetsu')">
-            <img src="images/shirobara-karutethsu.png" alt="白バラカルテツミルク">
-            <h3>白バラカルテツミルク<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-fruts')">
-            <img src="images/shirobara-fruts.png" alt="白バラフルーツオ・レ">
-            <h3>白バラフルーツオ・レ<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-GABA')">
-            <img src="images/daisenyogul.png" alt="大山牧場ヨーグルト">
-            <h3>大山牧場ヨーグルト<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-aoziru')">
-            <img src="images/shirobara-aoziru.webp" alt="白バラ菜食健美">
-            <h3>白バラ菜食健美<br>（宅配専用）</h3>
-          </div>
-        </div>
-        <br>
-        <!-- 蒜山ジャージー -->
-        <h2>蒜山ジャージー牛乳</h2>
-        <div class="product-grid">
-          <div class="product-card" onclick="openModal('modal-hirusen_4.2')">
-            <img src="images/hirusen_4.2.png" alt="蒜山ジャージー4.2" class="hirusen-img">
-            <h3>蒜山ジャージー4.2</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-hirusen_A2')">
-            <img src="images/hirusen_A2.png" alt="蒜山ジャージーA2" class="hirusen-img">
-            <h3>蒜山高原の<br>すっきり美味しい<br>ジャージー牛乳A2</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-hirusen_premium')">
-            <img src="images/hirusen_premium.png" alt="蒜山ジャージープレミアム" class="hirusen-img">
-            <h3>蒜山ジャージー牛乳<br>プレミアム</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-hirusen_cafeore')">
-            <img src="images/hirusen_cafeore.png" alt="蒜山ジャージーカフェオレ" class="hirusen-img">
-            <h3>蒜山酪農<br>カフェ・オ・レ</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-hirusen_yoguruto')">
-            <img src="images/hirusen_yoguruto.png" alt="蒜山ジャージーヨーグルト">
-            <h3>蒜山ジャージー<br>飲むヨーグルト</h3>
-          </div>
-        </div>
-        <br>
-        <!-- 森永 -->
-        <h2>森永乳業</h2>
-        <div class="product-grid">
-          <div class="product-card" onclick="openModal('modal-karudasu_milk')">
-            <img src="images/karudasu_milk.jpg" alt="カルダス" class="hirusen-img">
-            <h3>森永カルダスミルク<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-karada_nomu_yogurt')">
-            <img src="images/karada_nomu_yoguruto.jpg" alt="カラダ飲むヨーグルト" class="hirusen-img">
-            <h3>カラダ強くする<br>飲むヨーグルト<br>（宅配専用）</h3>
-          </div>
-          <div class="product-card" onclick="openModal('modal-karada_yogurt')">
-            <img src="images/karada_yoguruto.jpg" alt="カラダヨーグルト">
-            <h3>カラダ強くする<br>ヨーグルト<br>（宅配専用）</h3>
-          </div>
-        </div>
-        <br>
-        <!-- 明治 -->
-        <h2>明治乳業</h2>
-        <div class="product-grid">
-          <div class="product-card" onclick="openModal('modal-R-1')">
-            <img src="images/R-1.jpg" alt="R-1">
-            <h3>R-1ドリンクタイプ<br>（宅配専用）</h3>
-          </div>
-        </div>
-        <br>
-        <!-- 遠藤 -->
-        <h2>遠藤青汁</h2>
-        <div class="product-grid">
-          <div class="product-card" onclick="openModal('modal-endo_aojiru')">
-            <img src="images/endo_aojiru.png" alt="遠藤青汁">
-            <h3>青汁生ジュース<br>（宅配専用）</h3>
-          </div>
-        </div>
-      </section>
-
-      <!-- 商品モーダル -->
-      <div id="modal-shirobara" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-shirobara')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-milk.png" alt="白バラ牛乳">
-          <div class="modal-text">
-            <h3>特選白バラ牛乳</h3>
-            <p>180ml / 900ml<br>(税別)170円 / 530円</p>
-            <p>鳥取県内産生乳100％使用。特選生乳のみを特別に集乳し製品化しました。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-daisen" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-daisen')" aria-label="閉じる">×</button>
-          <img src="images/daisen-milk.png" alt="厳選大山牧場">
-          <div class="modal-text">
-            <h3>厳選大山牧場</h3>
-            <p>180ml / 900ml<br>(税別)190円 / 550円</p>
-            <p>特に優れた生乳の中でも厳しい基準をクリアした生乳のみを使用しています。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-cofe" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-cofe')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-cofe.png" alt="白バラこだわりカフェ・オ・レ">
-          <div class="modal-text">
-            <h3>白バラこだわりカフェ・オ・レ</h3>
-            <p>180ml / 900ml<br>(税別)170円 / 530円</p>
-            <p>生乳64％使用。キリマンジャロAA豆を使った本格派カフェオレです。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-teishibou" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-teishibou')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-teishibou.png" alt="白バラおいしい低脂肪牛乳">
-          <div class="modal-text">
-            <h3>白バラおいしい低脂肪牛乳</h3>
-            <p>180ml<br>(税別)170円</p>
-            <p>生乳100％。乳脂肪分60％カット（普通牛乳比）。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-yogurt" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-yogurt')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-yogurt.png" alt="白バラのむヨーグルト">
-          <div class="modal-text">
-            <h3>白バラのむヨーグルト</h3>
-            <p>180ml / 750ml<br>(税別)170円 / 530円</p>
-            <p>生乳78％使用。飲みごたえのあるヨーグルトです。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-karutetsu" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-karutetsu')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-karutethsu.png" alt="白バラカルテツミルク">
-          <div class="modal-text">
-            <h3>白バラカルテツミルク</h3>
-            <p>180ml<br>(税別)170円</p>
-            <p>半日分のカルシウム・鉄、ビタミンD配合。毎日の栄養補給に。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-fruts" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-fruts')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-fruts.png" alt="白バラフルーツオ・レ">
-          <div class="modal-text">
-            <h3>白バラフルーツオ・レ</h3>
-            <p>180ml<br>(税別)170円</p>
-            <p>りんご・バナナ・ももの果汁をミックス。甘酸っぱい味わい。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-GABA" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-GABA')" aria-label="閉じる">×</button>
-          <img src="images/daisenyogul.png" alt="大山牧場ヨーグルト">
-          <div class="modal-text">
-            <h3>大山牧場ヨーグルト</h3>
-            <p>100g<br>(税別)170円</p>
-            <p>シンプルな配合。生きて腸まで届くビフィズス菌BB-12使用。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-aoziru" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-aoziru')" aria-label="閉じる">×</button>
-          <img src="images/shirobara-aoziru.webp" alt="白バラ菜食健美">
-          <div class="modal-text">
-            <h3>白バラ菜食健美</h3>
-            <p>90ml<br>(税別)200円</p>
-            <p>高知県産10種の野菜。青汁特有の苦みを抑えたやさしい飲み口。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-hirusen_4.2" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-hirusen_4.2')" aria-label="閉じる">×</button>
-          <img src="images/hirusen_4.2.png" alt="蒜山ジャージー4.2">
-          <div class="modal-text">
-            <h3>蒜山ジャージー4.2</h3>
-            <p>1000ml<br>(税別)500円</p>
-            <p>季節によって変動する乳脂肪分が4.2で一定となるように調整した成分調整牛乳。
-              もちろんジャージー生乳100%でなにも加えていないので蒜山ジャージー牛乳本来の風味が生きています。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-hirusen_A2" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-hirusen_A2')" aria-label="閉じる">×</button>
-          <img src="images/hirusen_A2.png" alt="蒜山ジャージーA2">
-          <div class="modal-text">
-            <h3>蒜山高原のすっきり美味しいジャージー牛乳A2</h3>
-            <p>1000ml<br>(税別)872円</p>
-            <p>乳中のたんぱく質の内、β-カゼインがA2タイプ100％の成分無調整牛乳です。
-              検査により選び抜かれた特別なA2ジャージー牛だけを集めた限定牧場で生産した生乳を使用しています。
-              ジャージー牛乳ならではの濃厚な栄養成分と、香りが良くすっきりした飲み口が特徴です。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-hirusen_premium" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-hirusen_premium')" aria-label="閉じる">×</button>
-          <img src="images/hirusen_premium.png" alt="蒜山ジャージープレミアム">
-          <div class="modal-text">
-            <h3>蒜山ジャージー牛乳プレミアム</h3>
-            <p>1000ml<br>(税別)560円</p>
-            <p>蒜山ジャージー牛の生乳を100％使用した成分無調整牛乳です。
-              すっきりとしていながら芳醇なコクがまさにプレミアムな味わい。
-              そのまま飲めば、豊かな甘みと香りが広がります。英国風にミルクティーもおすすめです。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-hirusen_cafeore" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-hirusen_cafeore')" aria-label="閉じる">×</button>
-          <img src="images/hirusen_cafeore.png" alt="蒜山ジャージーカフェオレ">
-          <div class="modal-text">
-            <h3>蒜山酪農カフェ・オ・レ</h3>
-            <p>1000ml<br>(税別)525円</p>
-            <p>コーヒーの豊かな香りを引き出すため、コーヒー豆は自家抽出にこだわり、毎朝挽きたてをドリップ。
-              濃厚な蒜山ジャージー乳を多めにブレンドし、甘さ控えめに仕上げた贅沢なカフェオレです。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-hirusen_yoguruto" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-hirusen_yoguruto')" aria-label="閉じる">×</button>
-          <img src="images/hirusen_yoguruto.png" alt="蒜山ジャージーヨーグルト">
-          <div class="modal-text">
-            <h3>蒜山ジャージー飲むヨーグルト</h3>
-            <p>150ml<br>(税別)220円</p>
-            <p>蒜山ジャージー牛乳の「濃さ」をそのままに、乳酸菌のみで発酵させた自然な味わいのドリンクヨーグルトです。
-              ジャージー乳本来の濃厚なコクのある口当たりを味わい頂けます。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-karudasu_milk" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-karudasu_milk')" aria-label="閉じる">×</button>
-          <img src="images/karudasu_milk.jpg" alt="カルダスミルク">
-          <div class="modal-text">
-            <h3>森永カルダスミルク</h3>
-            <p>450ml<br>(税別)525円</p>
-            <p>ビフィズス菌BB５３６配合に加え、牛乳の２倍のカルシウム（当社牛乳比）、鉄、ビタミンDを１本で効率よく補える栄養機能食品です。
-              毎日飲み続けやすい味わいです。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-karada_nomu_yogurt" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-karada_nomu_yogurt')" aria-label="閉じる">×</button>
-          <img src="images/karada_nomu_yoguruto.jpg" alt="カラダ飲むヨーグルト">
-          <div class="modal-text">
-            <h3>カラダ強くする飲むヨーグルト</h3>
-            <p>100g<br>(税別)180円</p>
-            <p>子供や大人の健康的な生活の維持のために医師の99.01％が推奨！※
-              森永乳業が誇る３つの機能性素材「ラクトフェリン・ビフィズス菌BB536・シールド乳酸菌®」を配合。
-              ミルク由来のコクのあるおいしさをお届けします。
-              <br>※2025年8月Dr’sReview事務局調べ　対象：101名（内科医または小児科医） 設問：「本シリーズを継続的に摂取することで、子供や大人の健康的な生活の維持におすすめできると思いますか？」
-              ※本アンケートは商品使用者個人の感想であり、効果効能を保証するものではありません。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-karada_yogurt" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-karada_yogurt')" aria-label="閉じる">×</button>
-          <img src="images/karada_yoguruto.jpg" alt="カラダヨーグルト">
-          <div class="modal-text">
-            <h3>カラダ強くするヨーグルト</h3>
-            <p>100g<br>(税別)180円</p>
-            <p>子供や大人の健康的な生活の維持のために医師の99.01％が推奨！※
-              森永乳業が誇る３つの機能性素材「ラクトフェリン・ビフィズス菌BB536・シールド乳酸菌®」を配合。
-              ミルク由来のコクのあるおいしさをお届けします。
-              <br>※2025年8月Dr’sReview事務局調べ　対象：101名（内科医または小児科医） 設問：「本シリーズを継続的に摂取することで、子供や大人の健康的な生活の維持におすすめできると思いますか？」
-              ※本アンケートは商品使用者個人の感想であり、効果効能を保証するものではありません。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-R-1" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-R-1')" aria-label="閉じる">×</button>
-          <img src="images/R-1.jpg" alt="R-1">
-          <div class="modal-text">
-            <h3>明治プロビオヨーグルトR-1ドリンクタイプ（宅配専用）</h3>
-            <p>100g<br>(税別)180円</p>
-            <p>強さひきだすR-1乳酸菌EPS<br>
-              宅配専用ならではの、まろやかでコクがある風味。ビン入りで飲みきりやすいドリンクタイプのヨーグルトです。</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-endo_aojiru" class="modal" style="display:none;">
-        <div class="modal-content">
-          <button class="close" onclick="closeModal('modal-endo_aojiru')" aria-label="閉じる">×</button>
-          <img src="images/endo_aojiru.png" alt="エンドウ青汁">
-          <div class="modal-text">
-            <h3>青汁生ジュース</h3>
-            <p>90cc<br>(税別)200円</p>
-            <p>遠藤青汁の青汁は、苦手な方にも飲んでいただきたい、栄養成分を活かし美味しさにもとことんこだわった青汁です。
-              ケール100％生青汁　1本に約80gのケールの栄養</p>
-          </div>
-        </div>
-      </div>
-
-      <section class="contact" data-aos="fade-up">
-        <p>配達の最低本数については</p>
-        <p>180ml：週2本<br>500ml以上：週1本</p>
-        <p>から配達できます。</p>
-        <h2>お問い合わせ</h2>
-        <p><a href="tel:080-2511-0197" class="contact-btn">電話でお問い合わせ</a></p>
-        <p><a href="contact.html" class="contact-btn">メールでお問い合わせ</a></p>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2025 野江ミルクセンター | 配達専門</p>
-    </footer>
-
+    </div>
     <script>
-      // ハンバーガーメニュー
-      document.addEventListener('DOMContentLoaded', () => {
-        const toggle = document.querySelector('.navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-        toggle.addEventListener('click', () => {
-          const expanded = toggle.getAttribute('aria-expanded') === 'true';
-          toggle.setAttribute('aria-expanded', (!expanded).toString());
-          menu.classList.toggle('open');
+      const productDetails = {
+        "特選白バラ牛乳": {
+          price: "180ml / 900ml 170円 / 530円（税別）",
+          desc: "鳥取県内産生乳100％使用。特選生乳のみを特別に集乳し製品化しました。"
+        },
+        "厳選大山牧場": {
+          price: "180ml / 900ml 190円 / 550円（税別）",
+          desc: "特に優れた生乳の中でも厳しい基準をクリアした生乳のみを使用しています。"
+        },
+        "こだわりカフェ・オ・レ": {
+          price: "180ml / 900ml 170円 / 530円（税別）",
+          desc: "生乳64％使用。キリマンジャロAA豆を使った本格派カフェオレです。"
+        },
+        "おいしい低脂肪牛乳": {
+          price: "180ml 170円（税別）",
+          desc: "生乳100％。乳脂肪分60％カット（普通牛乳比）。"
+        },
+        "白バラのむヨーグルト": {
+          price: "180ml / 750ml 170円 / 530円（税別）",
+          desc: "生乳78％使用。飲みごたえのあるヨーグルトです。"
+        },
+        "カルテツミルク": {
+          price: "180ml 170円（税別）",
+          desc: "半日分のカルシウム・鉄、ビタミンD配合。毎日の栄養補給に。"
+        },
+        "フルーツオ・レ": {
+          price: "180ml 170円（税別）",
+          desc: "りんご・バナナ・ももの果汁をミックス。甘酸っぱい味わい。"
+        },
+        "大山牧場ヨーグルト": {
+          price: "100g 170円（税別）",
+          desc: "シンプルな配合。生きて腸まで届くビフィズス菌BB-12使用。"
+        },
+        "白バラ菜食健美": {
+          price: "90ml 200円（税別）",
+          desc: "高知県産10種の野菜。青汁特有の苦みを抑えたやさしい飲み口。"
+        },
+        "蒜山ジャージー4.2": {
+          price: "1000ml 500円（税別）",
+          desc: "季節によって変動する乳脂肪分が4.2で一定となるように調整した成分調整牛乳。ジャージー生乳100％で、蒜山ジャージー牛乳本来の風味が生きています。"
+        },
+        "ジャージー牛乳A2": {
+          price: "1000ml 872円（税別）",
+          desc: "β-カゼインがA2タイプ100％の成分無調整牛乳です。特別なA2ジャージー牛の生乳を使用し、濃厚な栄養成分とすっきりした飲み口が特徴です。"
+        },
+        "ジャージープレミアム": {
+          price: "1000ml 560円（税別）",
+          desc: "蒜山ジャージー牛の生乳を100％使用した成分無調整牛乳です。すっきりしながら芳醇なコクがあり、そのままでもミルクティーにもおすすめです。"
+        },
+        "蒜山酪農カフェ・オ・レ": {
+          price: "1000ml 525円（税別）",
+          desc: "毎朝挽きたてをドリップしたコーヒーに、濃厚な蒜山ジャージー乳を多めにブレンド。甘さ控えめの贅沢なカフェオレです。"
+        },
+        "飲むヨーグルト": {
+          price: "150ml 220円（税別）",
+          desc: "蒜山ジャージー牛乳の濃さをそのままに、乳酸菌のみで発酵させた自然な味わいのドリンクヨーグルトです。"
+        },
+        "カルダスミルク": {
+          price: "450ml 525円（税別）",
+          desc: "ビフィズス菌BB536配合に加え、カルシウム、鉄、ビタミンDを1本で効率よく補える栄養機能食品です。"
+        },
+        "カラダ強くする飲むヨーグルト": {
+          price: "100g 180円（税別）",
+          desc: "ラクトフェリン・ビフィズス菌BB536・シールド乳酸菌を配合。ミルク由来のコクのあるおいしさです。"
+        },
+        "カラダ強くするヨーグルト": {
+          price: "100g 180円（税別）",
+          desc: "ラクトフェリン・ビフィズス菌BB536・シールド乳酸菌を配合。毎日の健康習慣に続けやすいヨーグルトです。"
+        },
+        "R-1ドリンクタイプ": {
+          price: "100g 180円（税別）",
+          desc: "強さひきだすR-1乳酸菌EPS。宅配専用ならではの、まろやかでコクがある風味のドリンクタイプです。"
+        },
+        "青汁生ジュース": {
+          price: "90cc 200円（税別）",
+          desc: "ケール100％生青汁。苦手な方にも飲んでいただきたい、美味しさにもこだわった青汁です。"
+        }
+      };
+
+      const modal = document.querySelector("#product-modal");
+      const modalMaker = document.querySelector("#modal-maker");
+      const modalTitle = document.querySelector("#modal-title");
+      const modalPrice = document.querySelector("#modal-price");
+      const modalDesc = document.querySelector("#modal-desc");
+
+      document.querySelectorAll(".product-card").forEach((card) => {
+        card.tabIndex = 0;
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", `${card.querySelector("h3").textContent}の詳細を見る`);
+
+        const open = () => {
+          const title = card.querySelector("h3").textContent.trim();
+          const detail = productDetails[title];
+          if (!detail) return;
+          const image = card.querySelector("img");
+          document.querySelector("#modal-image").src = image.src;
+          document.querySelector("#modal-image").alt = image.alt;
+          modalMaker.textContent = card.querySelector(".maker").textContent.trim();
+          modalTitle.textContent = title;
+          modalPrice.innerHTML = detail.price.replace(/ ([0-9,]+円)/, "<br>$1");
+          modalDesc.textContent = detail.desc;
+          modal.setAttribute("aria-hidden", "false");
+          document.body.classList.add("modal-open");
+        };
+
+        card.addEventListener("click", open);
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            open();
+          }
         });
-        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
       });
 
-      function openModal(id) {
-        // すべてのモーダルを非表示にする
-        document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
-        // 指定のモーダルのみ表示
-        document.getElementById(id).style.display = 'block';
-      }
+      document.querySelectorAll("[data-close-modal]").forEach((button) => {
+        button.addEventListener("click", () => {
+          modal.setAttribute("aria-hidden", "true");
+          document.body.classList.remove("modal-open");
+        });
+      });
 
-      function closeModal(id) {
-        document.getElementById(id).style.display = 'none';
-      }
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-        slidesPerView: 1,
-        spaceBetween: 0,
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          modal.setAttribute("aria-hidden", "true");
+          document.body.classList.remove("modal-open");
+        }
       });
     </script>
   </body>

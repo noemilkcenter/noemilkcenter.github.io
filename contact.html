@@ -6,53 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ | 野江ミルクセンター</title>
     <link rel="icon" type="image/png" href="images/noe-milk-logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
   </head>
 
   <body>
-    <header class="navbar">
-      <a href="index.html" aria-label="トップへ">
-        <img src="images/noe-milk-longlogo.png" alt="野江ミルクセンター ロゴ" class="navbar-logo">
-      </a>
-      <button class="navbar-toggle" aria-label="メニュー" aria-controls="navbar-menu" aria-expanded="false">
-        <span class="navbar-toggle-icon"></span>
-      </button>
-      <nav class="navbar-menu" id="navbar-menu">
-        <a href="takuhai.html" class="takuhai-btn">宅配について</a>
-      </nav>
-    </header>
+    <div class="app-shell subpage-shell">
+      <header class="site-header" aria-label="サイトヘッダー">
+        <a class="brand" href="index.html" aria-label="トップへ">
+          <img src="images/noe-milk-longlogo.png" alt="野江ミルクセンター">
+        </a>
+        <a class="header-call" href="tel:080-2511-0197">電話</a>
+      </header>
 
-    <main class="container">
-      <h1>お問い合わせ</h1>
-      <form class="contact-form" action="https://formspree.io/f/xpwrbvdo" method="POST">
-        <input type="hidden" name="_subject" value="【野江ミルクセンター】お問い合わせ">
-        <label>お名前<input type="text" name="お名前" required></label>
-        <label>フリガナ<input type="text" name="フリガナ" required></label>
-        <label>郵便番号<input type="text" name="郵便番号" required></label>
-        <label>住所<input type="text" name="住所" required></label>
-        <label>電話番号<input type="tel" name="電話番号" required></label>
-        <label>メールアドレス<input type="email" name="メールアドレス" required></label>
-        <label>お問い合わせ内容<textarea name="お問い合わせ内容" rows="5" required></textarea></label>
-        <label class="checkbox"><input type="checkbox" name="同意" required> <a href="privacy.html"
-            target="_blank">個人情報保護方針</a>に同意する</label>
-        <button type="submit" class="btn-primary">送信する</button>
-      </form>
-      <p class="center"><a href="index.html">トップページへ戻る</a></p>
-    </main>
+      <main>
+        <section class="section page-title" aria-labelledby="contact-title">
+          <p class="eyebrow">申し込み・ご相談</p>
+          <h1 id="contact-title">お問い合わせ</h1>
+          <p class="lead">配達エリア、商品、本数など、まだ決まっていない内容もお気軽にご相談ください。</p>
+        </section>
 
-    <footer>
-      <p>© 2025 野江ミルクセンター | 配達専門</p>
-    </footer>
+        <section class="section">
+          <form class="contact-form" action="https://formspree.io/f/xpwrbvdo" method="POST">
+            <input type="hidden" name="_subject" value="【野江ミルクセンター】お問い合わせ">
+            <label>お名前<input type="text" name="お名前" required></label>
+            <label>フリガナ<input type="text" name="フリガナ" required></label>
+            <label>郵便番号<input type="text" name="郵便番号" required></label>
+            <label>住所<input type="text" name="住所" required></label>
+            <label>電話番号<input type="tel" name="電話番号" required></label>
+            <label>メールアドレス<input type="email" name="メールアドレス" required></label>
+            <label>お問い合わせ内容<textarea name="お問い合わせ内容" rows="5" required></textarea></label>
+            <label class="checkbox"><input type="checkbox" name="同意" required> <span><a href="privacy.html"
+                  target="_blank">個人情報保護方針</a>に同意する</span></label>
+            <button type="submit" class="button primary form-submit">送信する</button>
+          </form>
+        </section>
+      </main>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const toggle = document.querySelector('.navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-        toggle.addEventListener('click', () => menu.classList.toggle('open'));
-        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
-      });
-    </script>
+      <footer class="site-footer">
+        <p>© 2026 野江ミルクセンター</p>
+        <a href="index.html">トップページへ戻る</a>
+      </footer>
+    </div>
   </body>
 
 </html>
